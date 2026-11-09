@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+header {
+    background-color: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.security-banner {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+    transition: transform 0.5s ease,
+                background-color 0.5s ease,
+                box-shadow 0.5s ease;
+}
+
+.service-box:hover {
+    background-color: #d6eaf8;
+
+    transform: scale(1.08) translateY(-10px) rotate(2deg);
+
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+footer {
+    background-color: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
